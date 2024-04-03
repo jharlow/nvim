@@ -1,0 +1,3 @@
+;; extends
+; inherits: ecma
+

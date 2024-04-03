@@ -1,0 +1,66 @@
+{
+  "New PR template": {
+    "prefix": "newpr",
+    "body": [
+      "### Overview",
+      "${0}",
+      "",
+      "### Acceptance criteria",
+      "```Gherkin Syntax",
+      "WHEN",
+      "THEN ",
+      "```",
+      "",
+      "### Changes[^1]",
+      "[^1]: This changeset was automatically extracted from the commit history and then pruned to reflect the `HEAD`, no AI was used.",
+      "",
+      "Remember to update the base branch if not on `main`",
+      "```sh",
+      "gh pr edit -B",
+      "```",
+      "Then run:",
+      "- `:r !git-changes-short`: To extract only markdown bullets of changes",
+      "- `:r !git-changes-long`: To generate a markdown list of changes with each commit message as a sub-heading",
+      "",
+      "### Documentation",
+      "- [${2:ENG-}](https://benchco.atlassian.net/browse/${2:ENG-})",
+      "",
+      "### Due diligence",
+      "<details>",
+      "<summary><b>Click to review detailed history</b></summary>",
+      "",
+      "- [ ] ",
+      "- [ ] Automated tests written",
+      "- [ ] Deployed and tested",
+      "- [ ] Self review completed",
+      "",
+      "</details>",
+      "",
+      "### How to Test",
+      "```sh",
+      "${3:example}",
+      "```",
+      ""
+    ],
+    "description": "Generic template for a new PR, with all the neccessary sections"
+  },
+  "Draft PR": {
+    "prefix": "draftpr",
+    "body": [
+      "> [!NOTE] ",
+      "> This pull request is currently in **draft**. Please feel free to leave a review, but please note:",
+      "> - This is not complete code and you may need to re-review a lot of changes",
+      "> - I will automaticlly reject any approval you leave when it exists draft",
+      " "
+    ],
+    "description": "To mark to collaborators that they may waste their time reviewing a draft PR"
+  },
+  "Github Blockquote": {
+    "prefix": "ghbq",
+    "body": [
+      "> [!${1|NOTE,TIP,CAUTION,WARNING,IMPORTANT|}]  ",
+      "> ${0}"
+    ],
+    "description": "Fancy-formatted blockquote for Github markdown"
+  }
+}

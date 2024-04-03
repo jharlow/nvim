@@ -1,0 +1,30 @@
+{
+  "name": "Personal snippets",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "octo",
+        "path": "./prdesc.json"
+      },
+      {
+        "language": "octo",
+        "path": "./prcom.json"
+      },
+      {
+        "language": "markdown",
+        "path": "./prdesc.json"
+      },
+      {
+        "language": "markdown",
+        "path": "./prcom.json"
+      },
+      {
+        "language": "typescript",
+        "path": "typescript.json"
+      }
+    ]
+  }
+}
