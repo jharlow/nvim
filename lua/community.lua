@@ -21,14 +21,6 @@ return {
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.nvim-devdocs" },
-  {
-    "luckasRanarison/nvim-devdocs",
-    opts = {
-      filetypes = {
-        typescript = { "node", "javascript", "typescript" },
-      },
-    },
-  },
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
 
   -- lsp
