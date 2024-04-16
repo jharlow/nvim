@@ -49,8 +49,14 @@ return {
         ["<M-l>"] = { function() require("smart-splits").resize_right() end, desc = "Resize split right" },
 
         -- navigate buffer tabs with `H` and `L`
-        L = { function() require("astrocore.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc = "Next buffer" },
-        H = { function() require("astrocore.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc = "Previous buffer" },
+        L = {
+          function() require("astrocore.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+          desc = "Next buffer",
+        },
+        H = {
+          function() require("astrocore.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+          desc = "Previous buffer",
+        },
 
         -- mappings seen under group name "Buffer"
         ["<Leader>bD"] = {
@@ -63,7 +69,10 @@ return {
         },
 
         -- ripgrep with args
-        ["<leader>fg"] = { ":lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>", desc = "ripgrep"},
+        ["<leader>fg"] = {
+          ":lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>",
+          desc = "ripgrep",
+        },
 
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus

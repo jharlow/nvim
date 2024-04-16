@@ -8,29 +8,36 @@ return {
 
   -- git
   {
-    import = 'astrocommunity.git.octo-nvim',
+    import = "astrocommunity.git.octo-nvim",
     opts = {
       mappings = {
         vim.keymap.set("i", "@", "@<C-x><C-o>", { silent = true, buffer = true }),
-        vim.keymap.set("i", "#", "#<C-x><C-o>", { silent = true, buffer = true })
+        vim.keymap.set("i", "#", "#<C-x><C-o>", { silent = true, buffer = true }),
       },
-    }
+    },
   },
 
   -- editing support
-  { import = 'astrocommunity.editing-support.refactoring-nvim' },
-  { import = 'astrocommunity.editing-support.neogen' },
-  { import = 'astrocommunity.editing-support.nvim-devdocs' },
-  { import = 'astrocommunity.editing-support.zen-mode-nvim' },
-  { import = 'astrocommunity.editing-support.cutlass-nvim' },
+  { import = "astrocommunity.editing-support.refactoring-nvim" },
+  { import = "astrocommunity.editing-support.neogen" },
+  { import = "astrocommunity.editing-support.nvim-devdocs" },
+  {
+    "luckasRanarison/nvim-devdocs",
+    opts = {
+      filetypes = {
+        typescript = { "node", "javascript", "typescript" },
+      },
+    },
+  },
+  { import = "astrocommunity.editing-support.zen-mode-nvim" },
 
   -- lsp
-  { import = 'astrocommunity.lsp.lsp-signature-nvim' },
+  { import = "astrocommunity.lsp.lsp-signature-nvim" },
 
   -- motions
-  { import = 'astrocommunity.motion.nvim-surround' },
-  { import = 'astrocommunity.motion.leap-nvim' },
-  { import = 'astrocommunity.motion.flit-nvim' },
+  { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.motion.leap-nvim" },
+  { import = "astrocommunity.motion.flit-nvim" },
 
   -- completion
   { import = "astrocommunity.completion.copilot-lua" },
@@ -47,30 +54,30 @@ return {
           accept_line = false,
           next = "<M-]>",
           prev = "<M-[>",
-          dismiss = "<C-]>"
-        }
+          dismiss = "<C-]>",
+        },
       },
     },
   },
 
   -- debugging
-  { import = 'astrocommunity.debugging.nvim-bqf' },
+  { import = "astrocommunity.debugging.nvim-bqf" },
 
   -- utility
-  { import = 'astrocommunity.utility.telescope-live-grep-args-nvim' },
+  { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
 
   -- packs
   { import = "astrocommunity.pack.lua" },
-  { import = 'astrocommunity.pack.bash' },
-  { import = 'astrocommunity.pack.typescript' },
-  { import = 'astrocommunity.pack.rust' },
-  { import = 'astrocommunity.pack.python' },
-  { import = 'astrocommunity.pack.json' },
-  { import = 'astrocommunity.pack.markdown' },
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.markdown" },
 
   -- markdown and latext
-  { import = 'astrocommunity.markdown-and-latex.glow-nvim' },
+  { import = "astrocommunity.markdown-and-latex.glow-nvim" },
 
   -- workflow
-  { import = 'astrocommunity.workflow.hardtime-nvim' }
+  { import = "astrocommunity.workflow.hardtime-nvim" },
 }
