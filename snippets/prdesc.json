@@ -2,7 +2,7 @@
   "New PR template": {
     "prefix": "newpr",
     "body": [
-      "### Overview",
+      "### Why this code is being changed",
       "",
       "${0}",
       "",
