@@ -1,17 +1,23 @@
 {
   "PR Question": {
     "prefix": "que",
-    "body": ["⁇ **Question:** ${0}"],
+    "body": [
+      "⁇ **Question:** ${0}"
+    ],
     "description": "Asking a question that needs to be resolved before approval. Only resolved by the reviewer."
   },
   "PR Suggestion": {
     "prefix": "sug",
-    "body": ["👀 **Suggestion:** ${0}"],
+    "body": [
+      "👀 **Suggestion:** ${0}"
+    ],
     "description": "Making a suggestion. No action expected before merging. Can be resolved by the PR author."
   },
   "PR Request": {
     "prefix": "req",
-    "body": ["🛑 **Request:** ${0}"],
+    "body": [
+      "🛑 **Request:** ${0}"
+    ],
     "description": "Similar to a question, but the reviewer is expected to take action. Only resolved by the reviewer."
   },
   "PR Non-blocking Comment": {
@@ -20,11 +26,21 @@
       "💬 **Non-blocking comment:** ${0}",
       "> I do not expect this thread to be resolved before merging with approval."
     ],
-    "description": "Typically used for education or out-ofs-cope discussion. No action expected before merging. Can be resolved by the PR author."
+    "description": "Typically used for education or out-of-scope discussion. No action expected before merging. Can be resolved by the PR author."
+  },
+  "PR Question for Learning": {
+    "prefix": "gfl",
+    "body": [
+      "🎓 **Question for learning:** ${0}",
+      "> I do not expect this thread to be resolved before merging with approval."
+    ]
   },
   "PR Celebration": {
     "prefix": "cel",
-    "body": ["🎉 **Celebration:** ${0}"],
+    "body": [
+      "🎉 **Celebration:** ${0}",
+      "> I do not expect this thread to be resolved before merging with approval."
+    ],
     "description": "Celebrating a job well done. No action expected before merging. Can be resolved by the PR author."
   },
   "PR Approval Comment": {
@@ -36,5 +52,12 @@
       "${3|✅,❌,💬|} Confirmed this code fulfills the success criteria"
     ],
     "description": "PR Approval Comment"
+  },
+  "PR Self-Review Comment": {
+    "prefix": "sr",
+    "body": [
+      "🔍 **Self-review completed:** I have reviewed this PR, fixed my own comments, and believe it is ready for review."
+    ],
+    "description": "Comment to indicate that the author has reviewed their own PR."
   }
 }
