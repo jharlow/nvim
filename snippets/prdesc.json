@@ -76,5 +76,17 @@
       "> ${0}"
     ],
     "description": "Fancy-formatted blockquote for Github markdown"
+  },
+  "Generic Details": {
+    "prefix": "details",
+    "body": [
+      "<details>",
+      "<summary><b>${0}</b></summary>",
+      "",
+      "${1}",
+      "",
+      "</details>"
+    ],
+    "description": "Generic details block for Github markdown"
   }
 }
