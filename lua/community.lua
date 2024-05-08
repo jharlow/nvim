@@ -26,6 +26,9 @@ return {
   -- lsp
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
 
+  ---- indent
+  { import = "astrocommunity.indent.mini-indentscope" },
+
   -- motions
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.motion.leap-nvim" },
@@ -61,7 +64,7 @@ return {
   -- packs
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
-  { import = "astrocommunity.pack.typescript" },
+  -- { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.json" },
@@ -71,5 +74,5 @@ return {
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
 
   -- workflow
-  { import = "astrocommunity.workflow.hardtime-nvim" },
+  -- { import = "astrocommunity.workflow.hardtime-nvim" },
 }
