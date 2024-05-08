@@ -4,7 +4,7 @@
     "body": [
       "## Change contract",
       "",
-      "### Why this code is being changed",
+      "### Why change this code",
       "",
       "${0}",
       "",
@@ -17,7 +17,7 @@
       "",
       "Please do not approve this PR until you believe all the following are true:",
       "- The changes in this branch meet the acceptance criteria",
-      "- The changes in this branch meet definition of done",
+      "- The changes in this branch meet the definition of done",
       "- The changes in this branch have been tested and work when executed",
       "",
       "## Technical details",
