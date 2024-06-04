@@ -88,5 +88,17 @@
       "</details>"
     ],
     "description": "Generic details block for Github markdown"
+  },
+  "Abbreviated Code": {
+    "prefix": "hiddencode",
+    "body": [
+      "<details>",
+      "<summary><b>${0}: hidden for brevity</b></summary>",
+      "<pre class=\"notranslate\">",
+      "${1}",
+      "</pre>",
+      "</details>"
+    ],
+    "description": "Details block summarizing code"
   }
 }
