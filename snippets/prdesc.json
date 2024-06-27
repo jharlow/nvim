@@ -15,11 +15,6 @@
       "THEN",
       "```",
       "",
-      "Please do not approve this PR until you believe all the following are true:",
-      "- The changes in this branch meet the acceptance criteria",
-      "- The changes in this branch meet the definition of done",
-      "- The changes in this branch have been tested and work when executed",
-      "",
       "## Technical details",
       "",
       "### Changes[^1]",
@@ -42,7 +37,6 @@
       "<details>",
       "<summary><b>Click to review detailed history</b></summary>",
       "",
-      "- [ ] ",
       "- [ ] Automated tests written",
       "- [ ] Deployed and tested",
       "- [ ] Self review completed",
@@ -71,10 +65,7 @@
   },
   "Github Blockquote": {
     "prefix": "ghbq",
-    "body": [
-      "> [!${1|NOTE,TIP,CAUTION,WARNING,IMPORTANT|}]  ",
-      "> ${0}"
-    ],
+    "body": ["> [!${1|NOTE,TIP,CAUTION,WARNING,IMPORTANT|}]  ", "> ${0}"],
     "description": "Fancy-formatted blockquote for Github markdown"
   },
   "Generic Details": {

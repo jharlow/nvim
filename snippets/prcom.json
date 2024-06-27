@@ -2,7 +2,7 @@
   "PR Question": {
     "prefix": "que",
     "body": [
-      "⁇ **Question:** ${0}"
+      "❓ **Question:** ${0}"
     ],
     "description": "Asking a question that needs to be resolved before approval. Only resolved by the reviewer."
   },
