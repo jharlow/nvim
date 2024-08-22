@@ -23,13 +23,8 @@ return {
       opts.section.header.val = {
         "",
         "",
-        "",
-        "",
         " The things that make me different",
         " are the things that make me",
-        "",
-        "",
-        "",
         "",
         "",
       }

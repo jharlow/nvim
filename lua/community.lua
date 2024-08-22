@@ -64,6 +64,7 @@ return {
   -- packs
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
+  -- { import = "astrocommunity.pack.ruby" },
   -- { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.python" },
