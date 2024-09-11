@@ -16,6 +16,7 @@
       "gh pr edit -B",
       "```",
       "Then run:",
+      "- `:r !git-changes`: To extract default Github body without ticket numbers",
       "- `:r !git-changes-short`: To extract only markdown bullets of changes",
       "- `:r !git-changes-long`: To generate a markdown list of changes with each commit message as a sub-heading",
       "",
