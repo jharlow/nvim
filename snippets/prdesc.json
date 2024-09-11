@@ -48,7 +48,8 @@
     "body": [
       "> [!TIP]",
       "> This pull requests lines of code break down in the following buckets:",
-      "> Run :r !pr-diff-sum"
+      ":r !pr-diff-sum",
+      "> This summary is generated programatically, it may have changed slightly."
     ]
   },
   "Draft PR": {
