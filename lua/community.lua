@@ -35,28 +35,28 @@ return {
   { import = "astrocommunity.motion.flit-nvim" },
 
   -- completion
-  { import = "astrocommunity.completion.copilot-lua" },
-  { -- further customize copilot
-    "zbirenbaum/copilot.lua",
-    opts = {
-      suggestion = {
-        enabled = false,
-        auto_trigger = true,
-        debounce = 75,
-        keymap = {
-          accept = "<M-l>",
-          accept_word = false,
-          accept_line = false,
-          next = "<M-]>",
-          prev = "<M-[>",
-          dismiss = "<C-]>",
-        },
-      },
-    },
-  },
+  -- { import = "astrocommunity.completion.copilot-lua" },
+  -- { -- further customize copilot
+  --   "zbirenbaum/copilot.lua",
+  --   opts = {
+  --     suggestion = {
+  --       enabled = false,
+  --       auto_trigger = true,
+  --       debounce = 75,
+  --       keymap = {
+  --         accept = "<M-l>",
+  --         accept_word = false,
+  --         accept_line = false,
+  --         next = "<M-]>",
+  --         prev = "<M-[>",
+  --         dismiss = "<C-]>",
+  --       },
+  --     },
+  --   },
+  -- },
 
   -- debugging
-  { import = "astrocommunity.debugging.nvim-bqf" },
+  { import = "astrocommunity.quickfix.nvim-bqf" },
 
   -- utility
   { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
@@ -66,6 +66,8 @@ return {
   { import = "astrocommunity.pack.bash" },
   -- { import = "astrocommunity.pack.ruby" },
   -- { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.scala" },
+  { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.json" },
