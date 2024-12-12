@@ -107,6 +107,9 @@ return {
           settings = {
             autoUseWorkspaceTsdk = true,
             typescript = {
+              tsserver = {
+                maxTsServerMemory = 3000,
+              },
               updateImportsOnFileMove = { enabled = "always" },
               inlayHints = {
                 parameterNames = { enabled = "all" },
@@ -184,12 +187,12 @@ return {
       )
     end,
   },
-  {
-    "vuki656/package-info.nvim",
-    dependencies = { "MunifTanjim/nui.nvim" },
-    opts = {},
-    event = "BufRead package.json",
-  },
+  -- {
+  --   "vuki656/package-info.nvim",
+  --   dependencies = { "MunifTanjim/nui.nvim" },
+  --   opts = {},
+  --   event = "BufRead package.json",
+  -- },
   {
     "yioneko/nvim-vtsls",
     lazy = true,

@@ -131,5 +131,17 @@
     ],
     "body": "\n* ${1:@alpha }${2:@beta }${3:@eventProperty }${4:@experimental }${5:@internal }${6:@override }${7:@packageDocumentation }${8:@public }${9:@readonly }${10:@sealed }${11:@virtual}\n*",
     "description": "Add all of the TSdoc modifier tags to a TSdoc block. Make sure you place this on the last line of the TSdoc block."
+  },
+  "TS New Error": {
+    "prefix": [
+      "newerr"
+    ],
+    "body": [
+      "export class ${0}Error extends Error {",
+      "  constructor(message?: string, opts?: ErrorOptions) {",
+      "    super(message, opts);",
+      "  }",
+      "}"
+    ]
   }
 }

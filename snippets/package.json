@@ -23,6 +23,10 @@
       },
       {
         "language": "typescript",
+        "path": "tests.json"
+      },
+      {
+        "language": "typescript",
         "path": "typescript.json"
       }
     ]

@@ -1,0 +1,70 @@
+{
+  "TS Sync Test": {
+    "prefix": [
+      "test"
+    ],
+    "body": [
+      "it('should ${0}', () => {",
+      "  // Assemble",
+      "  ",
+      "  ",
+      "  // Act",
+      "  ",
+      "  ",
+      "  // Assert",
+      "  ",
+      "  ",
+      "})"
+    ],
+    "description": "Start an async test"
+  },
+  "TS Async Test": {
+    "prefix": [
+      "atest"
+    ],
+    "body": [
+      "it('should ${0}', async () => {",
+      "  // Assemble",
+      "  ",
+      "  ",
+      "  // Act",
+      "  ",
+      "  ",
+      "  // Assert",
+      "  ",
+      "  ",
+      "})"
+    ],
+    "description": "Start an async test"
+  },
+  "TS Test Contents": {
+    "prefix": [
+      "aaa"
+    ],
+    "body": [
+      "  // Assemble",
+      "  ${0}",
+      "  ",
+      "  // Act",
+      "  ",
+      "  ",
+      "  // Assert",
+      "  ",
+      "  "
+    ]
+  },
+  "TS Test imports": {
+    "prefix": [
+      "specf"
+    ],
+    "body": [
+      "import { describe, it, expect, afterEach, beforeAll } from 'vitest';",
+      "import { mock } from 'vitest-mock-extended';",
+      "import { faker } from '@faker-js/faker'",
+      "",
+      "describe(${0}, () => {",
+      "  ",
+      "})"
+    ]
+  }
+}
