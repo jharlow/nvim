@@ -21,6 +21,8 @@ require("lazy").setup({
     -- LazyVim extras
     { import = "lazyvim.plugins.extras.editor.refactoring" },
     { import = "lazyvim.plugins.extras.editor.mini-diff" },
+    -- TypeScript linting (oxlint LSP) + formatting (oxfmt via conform)
+    { import = "lazyvim.plugins.extras.lang.typescript.oxc" },
     -- import/override with your plugins
     { import = "plugins" },
   },
