@@ -7,3 +7,8 @@ vim.keymap.set("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>", { silent = true })
 vim.keymap.set("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", { silent = true })
 vim.keymap.set("n", "<C-\\>", "<Cmd>NvimTmuxNavigateLastActive<CR>", { silent = true })
 vim.keymap.set("n", "<C-Space>", "<Cmd>NvimTmuxNavigateNavigateNext<CR>", { silent = true })
+
+-- <leader>c: delete the current buffer (keeps the window layout intact)
+vim.keymap.set("n", "<leader>c", function()
+  Snacks.bufdelete()
+end, { desc = "Delete Buffer" })
