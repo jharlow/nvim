@@ -23,6 +23,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.editor.mini-diff" },
     -- TypeScript linting (oxlint LSP) + formatting (oxfmt via conform)
     { import = "lazyvim.plugins.extras.lang.typescript.oxc" },
+    -- neotest core (adapters wired up in lua/plugins/neotest.lua)
+    { import = "lazyvim.plugins.extras.test.core" },
     -- import/override with your plugins
     { import = "plugins" },
   },
