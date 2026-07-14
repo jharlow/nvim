@@ -7,3 +7,8 @@ vim.keymap.set("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>", { silent = true })
 vim.keymap.set("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", { silent = true })
 vim.keymap.set("n", "<C-\\>", "<Cmd>NvimTmuxNavigateLastActive<CR>", { silent = true })
 vim.keymap.set("n", "<C-Space>", "<Cmd>NvimTmuxNavigateNavigateNext<CR>", { silent = true })
+
+-- Override LazyVim default: <leader><space> finds files in cwd, not root dir
+vim.keymap.set("n", "<leader><space>", function()
+  LazyVim.pick("files", { root = false })()
+end, { desc = "Find Files (cwd)" })
