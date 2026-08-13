@@ -1,9 +1,24 @@
 return {
-  -- mini.animate's resize animation fights rapid/held resize keys (e.g. the
-  -- Windows hydra's HJKL), making windows "resize a little but never much".
-  -- Disable resize animation; keep the rest.
-  "nvim-mini/mini.animate",
-  opts = {
-    resize = { enable = false },
+  {
+    "folke/snacks.nvim",
+    opts = {
+      -- Smooth scrolling moves the real cursor through intermediate positions.
+      scroll = { enabled = false },
+    },
+  },
+  {
+    "nvim-mini/mini.animate",
+    opts = {
+      -- These animations fight rapid/held resize and scroll commands.
+      resize = { enable = false },
+      scroll = { enable = false },
+    },
+  },
+  {
+    "sphamba/smear-cursor.nvim",
+    optional = true,
+    opts = {
+      enabled = false,
+    },
   },
 }
