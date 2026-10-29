@@ -10,3 +10,8 @@ vim.g.root_spec = { "cwd", "lsp", { ".git", "lua" } }
 -- Requires `tsgo` on PATH (npm i -g @typescript/native-preview) or in the
 -- project's node_modules/.bin.
 vim.g.lazyvim_ts_lsp = "tsgo"
+
+-- Prefer `tsrs` (Rust port of tsgo) when the project has it in
+-- node_modules/.bin or it is on PATH; tsgo is used otherwise.
+-- See lua/plugins/typescript-lsp.lua. `:TsrsToggle` switches at runtime.
+vim.g.ts_use_tsrs = true
